@@ -27,7 +27,7 @@ def extract_record(item):
         rating = ""
         number_of_ratings = ""
 
-    result = (description,url,price,rating,number_of_ratings)
+    result = (description,price,rating,number_of_ratings,url)
     return result
 
 def main():
@@ -52,7 +52,7 @@ def main():
 
     with open("results.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Description", "Url", "Price", "Rating", "Review Count"])
+        writer.writerow(["Description", "Price", "Rating", "Review Count", "Url"])
         writer.writerows(records)
 
 main()
