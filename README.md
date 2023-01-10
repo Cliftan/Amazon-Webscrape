@@ -6,9 +6,16 @@ They will show the product description, price, rating, number of ratings, and th
 
 
 **Future Implementaions**
+- ~~Turn csv into excel so sort easier~~
 - Fix the weird terminal issue with the webdriver
 - Make a gui
-- Mayebe organize by rating
+- Maybe organize by rating
+
+
 
 
 **Video:**
+
+
+https://user-images.githubusercontent.com/118387748/211479359-653837b4-8a19-42ac-9895-ae08aeef0891.mp4
+
