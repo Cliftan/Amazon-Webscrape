@@ -56,7 +56,7 @@ def main():
         writer.writerow(["Description", "Price", "Rating", "Review Count", "Url"])
         writer.writerows(records)
  
-    read_file = pd.read_csv (r'C:\Users\clift\OneDrive\Desktop\Amazon\results.csv')
-    read_file.to_excel (r'C:\Users\clift\OneDrive\Desktop\Amazon\results.xlsx', index = None, header=True)
+    read_file = pd.read_csv (r'C:\Users\clift\OneDrive\Documents\GitHub\Amazon-Webscrape\results.csv')
+    read_file.to_excel (r'C:\Users\clift\OneDrive\Documents\GitHub\Amazon-Webscrape\results.xlsx', index = None, header=True)
 
 main()
