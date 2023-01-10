@@ -1,13 +1,14 @@
 import csv
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import pandas as pd
 
 def get_url(search_term):
-    template = "https://www.amazon.com/s?k={}&ref=nb_sb_noss"
+    template = "https://www.amazon.com/s?k={}"
     search_term = search_term.replace(" ", "+")
 
     url = template.format(search_term)
-    url += "&page{}"
+    url += "&page={}"
 
     return url
 
@@ -54,5 +55,8 @@ def main():
         writer = csv.writer(f)
         writer.writerow(["Description", "Price", "Rating", "Review Count", "Url"])
         writer.writerows(records)
+ 
+    read_file = pd.read_csv (r'C:\Users\clift\OneDrive\Desktop\Amazon\results.csv')
+    read_file.to_excel (r'C:\Users\clift\OneDrive\Desktop\Amazon\results.xlsx', index = None, header=True)
 
 main()
