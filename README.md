@@ -17,5 +17,5 @@ They will show the product description, price, rating, number of ratings, and th
 **Video:**
 
 
-https://user-images.githubusercontent.com/118387748/211479359-653837b4-8a19-42ac-9895-ae08aeef0891.mp4
+https://user-images.githubusercontent.com/118387748/211487192-bab01558-6162-409b-97b0-c238d32a4df4.mp4
 
